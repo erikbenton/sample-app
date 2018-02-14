@@ -4,7 +4,8 @@ class MicropostTest < ActiveSupport::TestCase
   
 	def setup
 		@user = users(:erik)
-		@micropost = @user.microposts.build(content: "Lorem ipsum")
+		#picture = fixture_file_upload('test/fixtures/rails.png', 'image/png')
+		@micropost = @user.microposts.build(content: "Lorem ipsum")#, picture: picture)
 	end
 
 	test 'should be valid' do
